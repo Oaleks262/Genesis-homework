@@ -10,49 +10,86 @@
     <title>Beauty Zone</title>
 </head>
 <body>
-    <header>
-        <!-- logo -->
-        <a href="/"><img src="./img/icon/logo.png" alt="Logo"></a>
-        <nav>
-            <ul>
-                <li><a class="link" href="#transform">Про нас</a></li>
-                <li><a class="link" href="#choose-us">Чому ми</a></li>
-                <li><a class="link" href="#procedures">Наші процедури</a></li>
-                <li><a class="link" href="#find-us">Контакти</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">P</a></li>
-                <li><a href="#">F</a></li>
-                <li><a href="#">I</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <a href="/beauty-zone"><img src="../beauty-zone/img/icon/logo.svg" alt="Logo"></a>
+                <nav class="header-nav">
+                    <ul class="nav-ul">
+                        <li><a class="link" href="#transform">Про нас</a></li>
+                        <li><a class="link" href="#choose-us">Чому ми</a></li>
+                        <li><a class="link" href="#procedures">Наші процедури</a></li>
+                        <li><a class="link" href="#find-us">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="icon-ul">
+                    <li>
+                        <a class="link-icon" href="tel:+380960000007" target="_blank">
+                            <svg>
+                                <use href="../beauty-zone/img/icon/icon.svg#icon-phone"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-icon" href="https://facebook.com" target="_blank">
+                            <svg>
+                                <use href="../beauty-zone/img/icon/icon.svg#icon-facebook"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-icon" href="https://instagram.com" target="_blank">
+                            <svg>
+                                <use href="../beauty-zone/img/icon/icon.svg#icon-instagram"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <p>
-                Косметологічна клініка
-            </p>
-            <h1>
-                Beauty Zone
-            </h1>
-            <a href="#" class="buttom">Замовити дзвінок</a>
-            <p>Запишись та отримай безкоштовну <br>
-                консультацію нашого косметолога
-            </p>
+            <div class="container">            
+            <div class="hero-content">
+                <div class="hero-container-1">
+                    <p class="hero-content-1">
+                        Косметологічна клініка
+                    </p>
+                    <h1 class="hero-content-title">
+                        Beauty <br> Zone
+                    </h1>
+                </div>
+                <div class="hero-container-2">
+                    <a href="#" class="buttom hero-button">Замовити дзвінок</a>
+                    <p class="hero-content-2">Запишись та отримай безкоштовну <br>
+                        консультацію нашого косметолога
+                    </p>
+                </div>
+            </div>
+           </div>
         </section>
 
         <section class="transform" id="transform">
-            <h2>
-                Перевтілюйтесь <br>
-                в <span class="h-span">beauty zone!</span>
-            </h2>
-            <p>
-                Наша косметологічна клініка пропонує вам професійні послуги 
-                з догляду за шкірою обличчя та тіла. 
-            </p>
-            <p>
-                B <b>beauty zone</b> ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди!
-            </p>
+            <div class="container">    
+                <div class="transform-text">
+                    <h2>
+                        Перевтілюйтесь <br>
+                        в <span class="h-span">beauty zone!</span>
+                    </h2>
+                    <p>
+                        Наша косметологічна клініка пропонує вам професійні послуги 
+                        з догляду за шкірою обличчя та тіла. 
+                    </p>
+                    <p>
+                        B <b>beauty zone</b> ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди!
+                    </p>
+                </div>
+                <div>
+                    <img src="../beauty-zone/img/picture/block-2-face-1.jpeg" alt="face-befor">
+                    <img src="../beauty-zone/img/picture/block-2-face-2.jpeg" alt="face-after">
+                </div>
+            </div>
         </section>
 
         <section class="choose-us" id="choose-us">
@@ -111,7 +148,7 @@
     </main>
     <footer>
         <!-- logo -->
-        <a href="/"><img src="" alt=""></a>
+        <a href="/beauty-zone"><img src="../beauty-zone/img/icon/logo.svg" alt="Logo"></a>
         <nav>
             <ul>
                 <li><a class="link" href="#transform">Про нас</a></li>
