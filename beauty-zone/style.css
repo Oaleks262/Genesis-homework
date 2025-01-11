@@ -504,3 +504,12 @@ footer{
 .footer-icon-ul svg:hover{
     fill: var(--color-blue);
 }
+.footer-ul p{
+    color: var(--grey-color);
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
