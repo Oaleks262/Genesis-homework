@@ -408,6 +408,7 @@ a{
     box-sizing: border-box;
     border: 2px solid rgb(116, 114, 114);
     background-color: transparent;
+    color: var(--color-white);
 }
 .forms-content > form > input::placeholder{
     color: var(--color-white);
