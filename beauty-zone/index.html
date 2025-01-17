@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../beauty-zone/css/style.css">
     <title>Beauty Zone</title>
 </head>
 <body>
@@ -61,7 +61,7 @@
                     </h1>
                 </div>
                 <div class="hero-container-2">
-                    <a href="#" class="buttom hero-button">Замовити дзвінок</a>
+                    <a href="#" class="buttom hero-button modal-btn-open">Замовити дзвінок</a>
                     <p class="hero-content-2">Запишись та отримай безкоштовну <br>
                         консультацію нашого косметолога
                     </p>
@@ -195,13 +195,13 @@
                 </div>
             </div>  
         </section>
-        <div class="modal">
+        <div class="modal is-hidden">
             <div class="modal-content">
                 <h2>Замовити <br>
                      дзвінок</h2>
-                <button class="modal-close">
+                <button class="modal-close modal-btn-close">
                     <svg>
-                        <use href="../beauty-zone/img/icon/icon.svg#icon-close"/>
+                        <use href="../beauty-zone/img/icon/icon.svg#icon-cross"/>
                     </svg>
                 </button>
                 <div class="forms-content-modal">
@@ -214,7 +214,7 @@
                         <input type="text" id="phone" name="phone" placeholder="Ваш номер телефону">
                         <input type="email" id="email" name="email" placeholder="Ваша електронна пошта">
                         <div class="forms-button">
-                            <input type="button" value="Записатись безкоштовно">
+                            <input class="modal-btn-close" type="button" value="Записатись безкоштовно">
                             <p>Натискаючи на кнопку я погоджуюсь <br> <a class="forms-file" href="#">з політикою конфіденційності</a></p>
                         </div>
                     </form>
@@ -267,5 +267,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
