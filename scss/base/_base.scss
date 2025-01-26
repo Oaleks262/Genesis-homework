@@ -1,0 +1,108 @@
+:root{
+    /* Primary colors */
+    --color-blue: #2B7FFF;
+    --color-white: #fff;
+    --color-dark-blue: #011C44;
+    /* Secondary colors */
+    
+    --dark-grey-color: #4A4A4A;
+    --grey-color: #747272;
+    --dark-blue-color: #011F4A;
+    --yellow-color: #FFD02B;
+    
+    --text-play: Play;
+    --text-roboto: Roboto;
+    }
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: Roboto;
+        color: var(--color-dark-blue);
+    }
+    .container{
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 100px;
+    }
+    li{
+        list-style:none;
+    }
+    a{
+        text-decoration: none;
+        color: var(--color-dark-blue);
+    }
+    .buttom{
+        width: 230px;
+        padding: 16px 32px;
+        border-radius: 32px;
+        font-weight: 600;
+        font-size: 18px;
+        background: var(--color-blue);
+        border: 2px solid var(--color-blue);
+        color: var(--color-white);
+        border-radius: 32px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21px;
+        transition: background .3s, color .3s;
+    }
+    .buttom:hover{
+        background: none;
+        color: var(--dark-blue-color);
+    }
+    .h__span{
+        color: var(--color-blue);
+    }
+
+    .forms__button{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 8;
+    
+        & > input{
+            display: flex;
+            width: 95%;
+            padding: 16px 32px 16px 32px;
+            border-radius: 32px;
+            border: 1px solid var(--color-blue);
+            background: var(--color-blue);
+            color: var(--color-white);
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 21px;
+            letter-spacing: 0%;
+            text-align: left;
+            transition: background-color .3s, color .3s;
+        }
+        & > input:hover{
+            background-color: var(--color-white);
+            color: var(--color-blue);
+        }
+        & > p {
+            color: rgb(116, 114, 114);
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+        
+    }
+    .forms__file{
+        color: rgb(116, 114, 114);
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: center;
+        text-decoration: underline;
+    }

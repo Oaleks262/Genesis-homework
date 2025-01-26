@@ -1,0 +1,82 @@
+.transform{
+    margin-bottom: 176px;
+
+
+
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        padding-top: 40px;
+        flex-basis: 50%;
+        gap: 40px;
+    }
+    &__text > h2{
+        font-family: Play;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 74px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__text > h2 span{
+        text-transform: capitalize;
+    }
+    &__text > p{
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__img{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        flex-basis: 50%;
+        padding-top: 12px;
+    }
+    &__img &__face__befor{
+        align-self: flex-start;
+        width: 335px;
+        border-radius: 50%;
+    }
+    &__img &__face__after{
+        align-self: flex-end;
+        width: 335px;
+        border-radius: 50%;
+    }
+    &__star1{
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        top: 360px;
+        left: 115px;
+    }
+
+    &__star2{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 30px;
+        right: 0px;
+    }
+
+    &__star3{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 320px;
+        right: 28px;
+    }   
+
+
+}

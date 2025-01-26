@@ -1,0 +1,76 @@
+.footer{
+    position: relative;
+    background: url(../../img/picture/bgf.png), var(--color-dark-blue);
+    background-position: center;
+    background-size: cover;
+    color: var(--color-white);
+    overflow: hidden;
+
+    &__img{
+        position: absolute;
+        width: 278px;
+        height: 213px;
+        right: -20px;
+        bottom: -50px;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 56px 0;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    &__icon__ul{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    &__icon__ul svg{
+        width: 30px;
+        height: 30px;
+        fill: var(--color-white);
+        transition: fill .3s;
+    }
+    &__icon__ul svg:hover{
+        fill: var(--color-blue);
+    }
+    &__ul p{
+        color: var(--grey-color);
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .link__footer{
+        color: var(--color-white);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0%;
+        text-align: left;
+        transition: color .3s;
+        &:hover{
+            color: var(--color-blue);
+        }
+    }
+
+
+}
