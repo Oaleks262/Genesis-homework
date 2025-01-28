@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Beauty Zone</title>
 </head>
 <body>
@@ -143,35 +144,67 @@
                         Наші <span class="h__span">процедури</span>
                     </h2>
                    <div class="procedures__slider">
-                    <button class="procedures__buttom__left">
+                    <button class="procedures__buttom__left button-prev">
                         <svg>
                             <use href="../img/icon/icon.svg#icon-arrow"/>
                         </svg>
                     </button>
-                    <ul class="procedures__list">
-                        <li class="procedures__item">
-                            <div class="procedures__cont">
-                                <img src="../img/picture/procedur-1.jpeg" alt="procedur-1">
-                                <p>Маски 
-                                    для обличчя</p>
-                            </div>
-                        </li>
-                        <li class="procedures__item">
-                            <div class="procedures__cont">
-                                <img src="../img/picture/procedur-2.jpeg" alt="procedur-1">
-                                <p>Маски 
-                                    для обличчя</p>
-                            </div>
-                        </li>
-                        <li class="procedures__item">
-                            <div class="procedures__cont">
-                                <img src="../img/picture/procedur-3.jpeg" alt="procedur-1">
-                                <p>Маски 
-                                    для обличчя</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <button class="procedures__buttom__right">
+                    <div class="swiper-container">
+                        <ul class="procedures__list swiper-wrapper" >
+                            <li class="procedures__item swiper-slide">
+                                <div class="procedures__cont">
+                                    <img src="../img/picture/procedur-1.jpeg" alt="procedur-1">
+                                    <p>Маски 
+                                        для обличчя</p>
+                                </div>
+                            </li>
+                            <li class="procedures__item swiper-slide">
+                                <div class="procedures__cont">
+                                    <img src="../img/picture/procedur-2.jpeg" alt="procedur-1">
+                                    <p>Маски 
+                                        для обличчя</p>
+                                </div>
+                            </li>
+                            <li class="procedures__item swiper-slide">
+                                <div class="procedures__cont">
+                                    <img src="../img/picture/procedur-3.jpeg" alt="procedur-1">
+                                    <p>Маски 
+                                        для обличчя</p>
+                                </div>
+                            </li>
+                            <li class="procedures__item swiper-slide">
+                                <div class="procedures__cont">
+                                    <img src="../img/picture/procedur-1.jpeg" alt="procedur-1">
+                                    <p>Маски 
+                                        для обличчя</p>
+                                </div>
+                            </li>
+                            <li class="procedures__item swiper-slide">
+                                <div class="procedures__cont">
+                                    <img src="../img/picture/procedur-2.jpeg" alt="procedur-1">
+                                    <p>Маски 
+                                        для обличчя</p>
+                                </div>
+                            </li>
+                            <li class="procedures__item swiper-slide">
+                                <div class="procedures__cont">
+                                    <img src="../img/picture/procedur-3.jpeg" alt="procedur-1">
+                                    <p>Маски 
+                                        для обличчя</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <button class="pagination__button" type="button" aria-label="Go to slide 1"></button>
+                            <button class="pagination__button" type="button" aria-label="Go to slide 2"></button>
+                            <button class="pagination__button" type="button" aria-label="Go to slide 3"></button>
+                            <button class="pagination__button" type="button" aria-label="Go to slide 4"></button>
+                            <button class="pagination__button" type="button" aria-label="Go to slide 5"></button>
+                            <button class="pagination__button" type="button" aria-label="Go to slide 6"></button>
+                        </div>
+                    </div>
+
+                    <button class="procedures__buttom__right button-next">
                         <svg>
                             <use href="../img/icon/icon.svg#icon-arrow"/>
                         </svg>
@@ -289,6 +322,9 @@
         <div class="vector-m">  
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/swiper-scroll.js"></script>
+
 </body>
 </html>
