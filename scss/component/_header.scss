@@ -31,9 +31,6 @@
             display: none;
         }
     }
-    .no-scroll {
-        overflow: hidden; 
-    }
     .icon__ul{
         display: none;
     }
@@ -41,8 +38,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 34px;
-        height: 34px;
+        width: 24px;
+        height: 24px;
         border: none;
         background-color: transparent;
         padding: 2px;
@@ -50,6 +47,8 @@
     }
     .header__button > svg{
         fill: var(--color-blue);
+        width: 22px;
+        height: 22px;
     }
 
 
@@ -66,23 +65,29 @@
     &__menu {
         position: fixed;
         top: 0;
-        right: 0;
-        z-index: 15;
-        width: 100%;
+        left: 0;
+        width: 0;
         height: 100vh;
+        z-index: 15;
         background-color: var(--color-white);
         padding: 35px;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in-out;
+        transition: transform .5s , opacity .3s , visibility .3s, width .6s;
+        opacity: 0;
+        visibility: hidden;
     }
 
     &__menu.header__menu__on {
+        width: 100%;
         transform: translateX(0);
+        visibility:visible;
+        opacity: 1;
     }
     &__menu__line{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 35px;
     }
     &__button__close{
         display: flex;

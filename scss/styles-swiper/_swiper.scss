@@ -4,8 +4,7 @@
 }
 .swiper-slide {
     flex-shrink: 0;
-    width: 344px !important;
-    height: 456px !important;
+    height: 416px !important;
     position: relative;
     transition-property: transform;
     display: block;
@@ -15,4 +14,22 @@
     justify-content: center;
     margin: 20px 0 0 0;
 }
-
+@media screen and (min-width: 1024px) {
+    .swiper-container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .swiper-slide {
+        flex-shrink: 0;
+        width: 344px !important;
+        height: 456px !important;
+        position: relative;
+        transition-property: transform;
+        display: block;
+    }
+    .pagination{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0 0;
+    }
+}

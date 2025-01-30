@@ -10,17 +10,16 @@
         gap: 48px;
     }
     &__container > h2{
-        font-family: Play;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 74px;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38px;
         letter-spacing: 0%;
         text-align: center;
     }
     &__container > ul{
         display: flex;
-        flex-basis: 100%;
-        flex-direction: row;
+        flex-direction: column;
         gap: 56px;
     }
     &__container__li{
@@ -28,8 +27,9 @@
         flex-direction: column;
         flex-basis: calc((100% / 3) - 112px);
         justify-content: center;
-        gap: 10px;
+        gap: 24px;
         padding: 24px 32px;
+        background-color: var(--color-white);
         border-radius: 32px;
         box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
     }
@@ -44,5 +44,58 @@
         line-height: 24px;
         letter-spacing: 0%;
         text-align: center;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .choose__us{
+        margin-bottom: 96px;
+    
+    
+        &__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+        &__container > h2{
+            font-family: Play;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 74px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+        &__container > ul{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            gap: 16px;
+        }
+        &__container__li{
+            display: flex;
+            flex-direction: column;
+            width: 33%;
+            justify-content: center;
+            gap: 10px;
+            padding: 24px 32px;
+            border-radius: 32px;
+            background-color: var(--color-white);
+            box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+        }
+        &__icon{
+            flex-basis: 48px;
+            fill: var(--color-blue);
+        }
+        &__container__li > p{
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
     }
 }

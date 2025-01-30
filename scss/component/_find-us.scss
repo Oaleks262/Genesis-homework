@@ -1,26 +1,24 @@
 .find__us{
-    margin-bottom: 96px;
-
-
+    margin-bottom: 24px;
     &__content{
         width: 100%;
         display: flex;
         flex-direction: column;
     }
     &__content > h2{
-        font-family: Play;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 74px;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 38px;
         letter-spacing: 0%;
         text-align: center;
-        margin-bottom: 48px;
+        margin: 40px 0 24px;
     }
 }
 
 .container__maps__forms{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     gap: 32px;
 
     & > iframe{
@@ -52,6 +50,7 @@
     }
     & > form{
         display: flex;
+        width: 100%;
         flex-direction: column;
         gap: 16px;
     }
@@ -73,3 +72,79 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .find__us{
+        margin-bottom: 96px;
+    
+    
+        &__content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        &__content > h2{
+            font-family: Play;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 74px;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+    }
+    
+    .container__maps__forms{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    
+        & > iframe{
+            width: 100%;
+            border: none;
+            border-radius: 32px;
+        }
+    }
+    
+    .forms__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 56px;
+        gap: 32px;
+        border-radius: 32px;
+        background: url('../../img/picture/bgf.png'),var(--color-dark-blue);
+        background-position: center;
+        background-size: cover;
+    
+        & > h3{
+            font-family: Roboto;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: var(--color-white);
+        }
+        & > form{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        & > form > input{
+            width: 100%;
+            padding: 16px;
+            border-radius: 32px;
+            box-sizing: border-box;
+            border: 2px solid var(--grey-color);
+            background-color: transparent;
+            color: var(--color-white);
+        }
+        & > form > input::placeholder{
+            color: var(--color-white);
+        }
+        & > form > input:focus{
+            background-color: var(--grey-color);
+        
+        }
+    }
+}

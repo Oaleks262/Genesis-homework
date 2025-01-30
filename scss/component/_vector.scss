@@ -9,8 +9,8 @@
 .vector-centr{
     position: absolute;
     width: 100%;
-    height: 2550.89px;
-    top: 1200px;
+    height: 973px;
+    top: 623px;
     z-index: -1;
 }
 .vector-m{
@@ -19,4 +19,29 @@
     background-image: url('../img/background-vector/vm.png');
     background-position: top;
     background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+    .vector-hero{
+        position: absolute;
+        width: 2101px;
+        height: 1923px;
+        top: -1198px;
+        z-index: 1;
+    
+    }
+    .vector-centr{
+        position: absolute;
+        width: 100%;
+        height: 2550.89px;
+        top: 1200px;
+        z-index: -1;
+    }
+    .vector-m{
+        width: 100%;
+        height: 1785px;
+        background-image: url('../img/background-vector/vm.png');
+        background-position: top;
+        background-repeat: no-repeat;
+    }
 }
