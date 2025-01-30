@@ -1,6 +1,6 @@
 .footer{
     position: relative;
-    background: url(../../img/picture/bgf.png), var(--color-dark-blue);
+    background: url('./img/picture/bgf.png'), var(--color-dark-blue);
     background-position: center;
     background-size: cover;
     color: var(--color-white);
@@ -79,7 +79,7 @@
 @media screen and (min-width: 1024px) {
     .footer{
         position: relative;
-        background: url(../../img/picture/bgf.png), var(--color-dark-blue);
+        background: url('./img/picture/bgf.png'), var(--color-dark-blue);
         background-position: center;
         background-size: cover;
         color: var(--color-white);
